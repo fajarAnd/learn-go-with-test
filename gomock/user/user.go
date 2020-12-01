@@ -1,13 +1,13 @@
 package user
 
 import (
-	"../doer"
+	"github.com/fajarAnd/learn-go-with-test/gomock/doer"
 )
 
 type User struct {
 	Doer doer.Doer
 }
 
-func (u *User) use() error {
-	return u.Doer.DoSomething(123, "Hello Gomock")
+func (u *User) Use() error {
+	return u.Doer.DoSomething(123, "Hello GoMock")
 }

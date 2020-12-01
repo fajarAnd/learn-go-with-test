@@ -1,8 +1,9 @@
 package user_test
 
 import (
-	"../mocks"
-	"./"
+	"github.com/fajarAnd/learn-go-with-test/gomock/mocks"
+	"github.com/fajarAnd/learn-go-with-test/gomock/user"
+	"github.com/golang/mock/gomock"
 	"testing"
 )
 
