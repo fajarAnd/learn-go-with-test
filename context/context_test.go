@@ -37,7 +37,7 @@ func TestHandler(t *testing.T) {
 		response := httptest.NewRecorder()
 
 		svr.ServeHTTP(response, request)
-
+		t.Log("apa nih ? ", store.cancelled)
 		if !store.cancelled {
 			t.Errorf("store was not told to cancel")
 		}
